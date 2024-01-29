@@ -2,6 +2,7 @@
 
 import {ref} from "vue";
 
+
 const tasks = ref([
   {
     name: "Task 1",
@@ -91,6 +92,9 @@ function updateTask(index) {
                   <button @click="showEditModal = null" type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-black hover:bg-blue-50 focus:outline-none">
                     Cancel
                   </button>
+                  <button class="w-full inline-flex justify-center">
+
+                  </button>
                 </div>
               </div>
             </div>
@@ -99,6 +103,10 @@ function updateTask(index) {
       </li>
     </ul>
   </div>
+
+  <button class="inline-flex text-3xl text-white items-center hover:text-red-950">
+    Testing Button
+  </button>
 
 
 </template>
